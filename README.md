@@ -1,2 +1,2 @@
-# goit-markup-hw-04
-homework #4 goit
+# goit-markup-hw-02-02
+2nd homework GoIT version 2
