@@ -121,6 +121,7 @@ button {
 
 .menu-link.current {
   position: relative;
+  color: #404bbf;
 }
 
 .menu-link.current::after {
@@ -217,6 +218,7 @@ button {
   letter-spacing: 0.04em;
   color: #fff;
   background-color: #4d5ae5;
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -310,12 +312,12 @@ button {
 
 .team-item {
   border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 1px 0 rgba(61, 62, 71, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
   background-color: #ffffff;
 }
 
-.team-img {
+.team-item-wrapper {
+  padding: 32px 0;
 }
 
 .team-subtitle {
@@ -346,12 +348,17 @@ button {
   margin-bottom: 32px;
 }
 
+.social-media-item {
+  width: 40px;
+  height: 40px;
+}
+
 .social-media-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   background-color: #4d5ae5;
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -388,11 +395,12 @@ button {
 
 .products-item {
   background: #fff;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .products-item:hover .product-cover-text,
 .products-item:focus .product-cover-text {
-  transform: translate(0);
+  transform: translateY(0%);
 }
 
 .products-item:hover {
@@ -413,9 +421,9 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  padding: 40px 32px 164px 32px;
+  padding: 40px 32px;
   transform: translateY(100%);
-  transition: transform 600ms ease-in-out;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .products-list {
@@ -493,11 +501,13 @@ button {
 
 .footer-wrapper {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-social-media-wrapper {
   display: flex;
   flex-direction: column;
+  gap: 16px;
 }
 
 .footer-social-media-subtitle {
@@ -509,7 +519,8 @@ button {
   margin-bottom: 16px;
 }
 
-.social-media-icons.soc-media-footer:hover {
+.social-media-icons.soc-media-footer:hover,
+.social-media-icons.soc-media-footer:focus {
   background-color: #31d0aa;
 }
 
