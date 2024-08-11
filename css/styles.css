@@ -289,7 +289,7 @@ button {
 }
 
 .team-member {
-  padding-top: 32px;
+  padding-top: 32px 0;
 }
 
 .team-title {
@@ -503,7 +503,6 @@ button {
 .footer-wrapper {
   display: flex;
   align-items: baseline;
-  gap: 16px;
 }
 
 .footer-social-media-wrapper {
@@ -518,6 +517,9 @@ button {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
+}
+.social-media-link-list.sm-footer {
+  gap: 16px;
 }
 
 .social-media-icons.soc-media-footer:hover,
