@@ -218,7 +218,7 @@ button {
   letter-spacing: 0.04em;
   color: #fff;
   background-color: #4d5ae5;
-  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -312,7 +312,8 @@ button {
 
 .team-item {
   border-radius: 0 0 4px 4px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   background-color: #ffffff;
 }
 
@@ -414,6 +415,7 @@ button {
 }
 
 .product-cover-text {
+  height: 100%;
   position: absolute;
   top: 0;
   background-color: #4d5ae5;
@@ -502,12 +504,12 @@ button {
 .footer-wrapper {
   display: flex;
   align-items: baseline;
+  gap: 16px;
 }
 
 .footer-social-media-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 
 .footer-social-media-subtitle {
